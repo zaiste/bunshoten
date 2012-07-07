@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Express</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        <link  rel="stylesheet" href="/stylesheets/style.css">
+    </head>
+    <body>
+        <header>
+            <p class="right">{{document.city}} {{document.signed_on}}</p>
+
+            <h1>{{document.name}}</h1>
+
+        </header>
+
+        <section>
+        <p>
+            <strong>Zleceniodawca:</strong><br/>
+            {{employer.name}}<br/>
+            {{employer.address}}
+        </p>
+        <p>
+            <strong>Zleceniobiorca:</strong><br/>
+            {{employee.name}}<br/>
+            {{employee.address}}
+        </p>
+        </section>
+
+        <p>
+        Zawierają umowę o następującej treści:
+        <ol>
+            <li>
+                Zleceniodawca zleca Zleceniobiorcy wykonanie następującej pracy:<br/>
+                <strong>{{document.title}}</strong> 
+            </li>
+            <li>Z tytułu wykonania zleconej pracy, Zleceniobiorca otrzyma wynagrodzenie w wysokości zł (słownie)</li>
+
+            <li>Wypłata wynagrodzenia nastąpi po wystawieniu rachunku przez Zleceniobiorcę i stwierdzeniu przez Zleceniodawcę terminowego i prawidłowego wykonania zleconej pracy, będącej przedmiotem niniejszej umowy.</li>
+
+            <li>W sprawach nie unormowanych tą umową ma zastosowanie Kodeks Cywilny.</li>
+
+            <li>
+                Postanowienia dodatkowe:
+                <ol>
+                    <li>Zleceniobiorca nie wnosi o objęcie go ubezpieczeniem społecznym i zdrowotnym,</li>
+                    <li>Zleceniobiorca oświadcza, że wynagrodzenie uzyskane z przedmiotowej umowy zaspokaja „jego” wszelkie roszczenia do korzystania z utworu przez Zleceniodawcę na każdym polu eksploatacji.</li>
+                    <li>Zleceniobiorca, przenosi (zgodnie z art. 41 ust. 1 pkt. 1 Ustawy o prawie autorskim i prawach pokrewnych z dnia 4 lutego 1994 roku Dz. U. z 2000 r. Nr 80, poz. 904) w ramach niniejszej umowy wszelkie autorskie prawa majątkowe do programów komputerowych, grafiki i wszelkiego rodzaju dokumentacji związanej z tworzonym oprogramowaniem oraz wyłączne prawo do udzielania zezwolenia na wykonywanie zależnego prawa autorskiego na rzecz Zleceniodawcy. </li>
+                </ol>
+            </li>
+            <li>Umowę sporządzono w dwóch jednobrzmiących egzemplarzach, po jednej dla każdej ze stron.</li>
+        </p>
+
+    </body>
+</html>
