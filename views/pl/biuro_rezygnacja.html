@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Document</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        <link  rel="stylesheet" href="/stylesheets/style.css">
+    </head>
+    <body>
+        <header>
+            <p>{{document.city}}, {{betterDate document.signed_on}}</p>
+
+            <p class="right">
+                <strong>{{sender.name}}</strong><br/>
+                {{sender.address}}
+            </p>
+                
+            </p>
+
+            <p>
+                <strong>{{recipient.name}}</strong><br/>
+                {{recipient.address}}
+            </p>
+        </header>
+
+        <section>
+        <p>Szanowni Państwo,</p>
+        
+        <p>Z dniem {{betterDate date}} wypowiadam umowę świadczenia usług księgowych w Państwa firmie z zachowaniem miesięcznego okresu wypowiedzenia, którego termin upływa z dniem {{betterDate due_date}}.</p>
+        </section>
+
+        <footer>
+            <div class="signature">
+                Z poważaniem,
+                <div class="emph">Jakub Nowak</div>
+            </div>
+        </footer>
+
+    </body>
+</html>
