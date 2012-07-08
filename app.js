@@ -6,7 +6,9 @@
 var express = require('express')
   , routes = require('./routes')
   , http = require('http')
-  , namespace = require('express-namespace');
+  , hbs = require('hbs')
+  , namespace = require('express-namespace')
+  , moment = require('moment');
 
 var app = express();
 
@@ -28,23 +30,29 @@ app.configure('development', function(){
   app.use(express.errorHandler());
 });
 
+hbs.registerHelper('betterDate', function(date) { 
+    console.log("Date: " + date);
+    return moment(date).format("DD/MM/YYYY");
+});
+
 app.get('/', routes.index);
 
 app.get('/gen', function(req, res){
   res.render('generate');
 });
 
-app.namespace('/documents/:lang/:id', function() {
+app.namespace('/documents', function() {
     app.get('/', function(req, res){
       res.render('index', { title: req.params.id, layout: false });
     });
 
 
     app.post('/', function(req, res){
-      document_name = req.params.lang + "/" + req.params.id
       if (req.is('json')) {
+        document_name = "";
         res.render(document_name, req.body);
       } else {
+        document_name = req.body.lang + "/" + req.body.id;
         res.render(document_name, JSON.parse(req.body.query));
       }
     });

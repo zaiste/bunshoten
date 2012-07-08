@@ -5,11 +5,13 @@
         <link  rel="stylesheet" href="/stylesheets/style.css">
     </head>
     <body>
-        <h1>Bunsho Ten</h1>
+        <h1>文書 点</h1>
 
         <h3>Feel free to generate your document</h3>
 
-        <form method="post" action="/documents/pl/umowa_o_dzielo">
+        <form method="post" action="/documents">
+            <p><input name="id"/> </p>
+            <p><input name="lang"/></p>
             <textarea name="query" rows="30" cols="70"></textarea>
             <br/>
             <input type="submit" value="Submit" />
