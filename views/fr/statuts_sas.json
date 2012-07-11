@@ -1,0 +1,51 @@
+{
+    "document": {
+        "name": "Statuts SAS Nukomeet",
+        "place": "Paris, France"
+        "time": "2012-02-12"
+    },
+    "company":{
+        "capital": "3000",
+        "name": "Nukomeet",
+        "activity": "Création d'applications web et mobiles",
+        "bank": "Société Générale",
+        "first_tax_date": "2012-12-31"
+    },
+    "actions":{
+        "number": "3000",
+        "value": "company.capital/actions.number",
+        "inalienability": "99"
+    },
+    "partner1": {
+        "name": "Jakub Piotr Nowak",
+        "address": "ul. Wierzbowa 6/40, -1-853 Poznan",
+        "birth_date":
+        "birth_place":
+        "capital": "1500"
+    },
+    "partner2": {
+        "name": "Alban Leveau-Vallier",
+        "address": "17 rue de Javel, 75015 Paris",
+        "birth_date": "1986-12-25",
+        "birth_place": "Courbevoie",
+        "capital": "1500"
+    },
+    "president": {
+        "name": "Alban Leveau-Vallier",
+        "address": "17 rue de Javel, 75015 Paris",
+        "birth_date": "1986-12-25",
+        "birth_place": "Courbevoie",
+        "capital": "1500"
+    },
+    "manager": {
+        "name": "Alban Leveau-Vallier",
+        "address": "17 rue de Javel, 75015 Paris",
+        "birth_date": "1986-12-25",
+        "birth_place": "Courbevoie",
+        "capital": "1500"
+    },
+    "move": {
+        "president": "true"
+    },
+
+
