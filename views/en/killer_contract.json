@@ -1,0 +1,20 @@
+{
+    "document": {
+        "name": "Killer Contract",
+        "city": "New York",
+        "signed_on": "2012-02-12"
+    },
+    "sender": {
+        "name": "Acme Corp",
+        "address": "Loop 6, 71853 NYC"
+    },
+    "recipient": {
+        "name": "The Office"
+        "address": "Down Street 3, 39442 NYC"
+    },
+    "price": "2000 USD",
+    "price_per_hour": "100 USD",
+    "title": "Developing a website"
+    "date": "2012-07-09",
+    "due_date": "2012-08-31"
+}
